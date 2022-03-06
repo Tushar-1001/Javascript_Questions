@@ -24,6 +24,3 @@ console.log(...arrR, ...arrG, ...arrB);
 console.log(arrR.concat(arrG, arrB));
 
 
-
-
-

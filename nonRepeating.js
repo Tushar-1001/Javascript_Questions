@@ -1,21 +1,23 @@
 function findNonRepeatingElementsfromArray(array){
 
     var result = [];
-    var map = {};
-    for(var i=0; i<array.length; i++){
-        if(map[array[i]]){
-            map[array[i]]++;
+    var obj = {};
+    for(let i=0; i<array.length; i++){
+        if(obj[array[i]]){
+            obj[array[i]]++;
         }else{
-            map[array[i]] = 1;
+            obj[array[i]] = 1;
         }
     }
+    console.log(obj)
+   
 
-    for(var key in map){
-        if(map[key] === 1){
+    for(let key in obj){
+        if(obj[key] === 1){
             result.push(key);
         }
     }
     return result;
 }
 
-console.log(findNonRepeatingElementsfromArray([1,2,2]))
+console.log(findNonRepeatingElementsfromArray([1,2,2,2,3]))
