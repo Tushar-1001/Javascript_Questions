@@ -30,23 +30,23 @@
 // //          console.log('Error');
 // //       });
 
-// const promise = new Promise((resolve, reject) => {
-//   const x = "qwe";
-//   const y = "qwe";
-//   if (x === y) {
-//     resolve();
-//   } else {
-//     reject();
-//   }
-// });
+const promise = new Promise((resolve, reject) => {
+  const x = "qwe";
+  const y = "qwe";
+  if (x === y) {
+    resolve();
+  } else {
+    reject();
+  }
+});
 
-// promise
-//   .then(() => {
-//     console.log("success");
-//   })
-//   .catch(() => {
-//     console.log("error");
-//   });
+promise
+  .then(() => {
+    console.log("success");
+  })
+  .catch(() => {
+    console.log("error");
+  });
 
 // const arr = [
 //   { name: "amit" },

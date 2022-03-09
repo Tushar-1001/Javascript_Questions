@@ -25,3 +25,14 @@ console.log(maxSubArray(arr));
 
 
 
+function outerFunc(){
+  let x = 'Secret'
+  return ()=>{
+    console.log(x)
+  }
+}
+
+let save = outerFunc()
+save()
+
+

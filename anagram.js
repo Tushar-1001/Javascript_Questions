@@ -20,4 +20,3 @@ isAnagram("indian", "ndiani");
 isAnagram("army", "mary");
 
 //army   mary
-
