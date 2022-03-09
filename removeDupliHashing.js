@@ -1,4 +1,4 @@
-//Find uniques or remove duplicates from an array using hashing.
+//Find uniques or remove duplicates from an array using hashing or without using any inbuilt method.
 
 function findnique(arr) {
   let obj = {};
@@ -12,6 +12,7 @@ function findnique(arr) {
       res.push(arr[i]);
     }
 }
+  console.log(obj)
   return res;
 }
 let arr = [1, 2, 1, 3, 2, 5];
