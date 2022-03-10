@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "fs": "^0.0.1-security"
-  }
+  },
+  "name": "js",
+  "description": "",
+  "version": "1.0.0",
+  "main": "MergeSortedArrays.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tushar-1001/Javascript-coding-questions.git"
+  },
+  "author": "Tushar Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tushar-1001/Javascript-coding-questions/issues"
+  },
+  "homepage": "https://github.com/Tushar-1001/Javascript-coding-questions#readme"
 }
