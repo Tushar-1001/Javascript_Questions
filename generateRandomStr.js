@@ -9,4 +9,4 @@ function makeid(length) {
    return result;
 }
 
-console.log(makeid(5));
+console.log(makeid(9));

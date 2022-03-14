@@ -10,8 +10,6 @@ function reverseArr(arr) {
 
     arr[i] = arr[arr.length - 1 - i];
 
-    // console.log(arr[(arr.length-1) - i])
-
     arr[arr.length - 1 - i] = temp;
   }
   return arr;

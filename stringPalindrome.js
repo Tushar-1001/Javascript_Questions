@@ -1,5 +1,8 @@
 let str = "racecar";
 
+
+// console.log(str.split('').reverse().join(''))
+
 function strPalindrome(str) {
   for (let i = 0; i < str.length / 2; i++) {
     if (str[i] == str[str.length - 1 - i]) {
