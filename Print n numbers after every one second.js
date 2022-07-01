@@ -1,15 +1,13 @@
 //Print n numbers after every one second
 
-
-
-let n = 10
-function printNum(n){
- for (let i = 1; i <= n; i++) {
+let n = 10;
+function printNum(n) {
+  for (let i = 1; i <= n; i++) {
     setTimeout(() => {
-        console.log(i)
+      console.log(i);
     }, i * 1000);
-     
- }return 'counting'
+  }
+  return "counting";
 }
 
-console.log(printNum(n))
+console.log(printNum(n));

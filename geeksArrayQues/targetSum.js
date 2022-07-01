@@ -1,39 +1,46 @@
-// Subarray with given sum or target sum.
+// // Subarray with given sum or target sum.
 
-//Function to find a continuous sub-array which adds up to a given number.
+// //Function to find a continuous sub-array which adds up to a given number.
 
-// let arr = [1,2,3,7,5]
-// let targetSum = 10
-// let res = []
-// function subarraySum(arr, targetSum){
-//     for (let i = 0; i < arr.length; i++) {
-//         if(arr[i] + arr[i+1] == targetSum){
-//             res.push(arr[i] ,arr[ i+1])
-//         }
-
-//     }return res
-// }
-
-// console.log(subarraySum(arr,  targetSum))
-
-// console.log(arr[arr.length-1])
-
-let array = [1, 2, 3,-9, 7, 5 , -8];
+let array = [1, 2, 3,-9, 7, 5 , -8, -10, -7];
 let sum = -17;
 
-let targetSum = (array, sum) => {
-  let nums = [];
+// let targetSum = (array, sum) => {
+//   let nums = [];
 
-  for (let i in array) {
-    let diff = sum - array[i];
+//   for (let i in array) {
+//     let diff = sum - array[i];
 
-    if (array.includes(diff)) {
-      nums.push(array[i], diff);
-      break;
+//     if (array.includes(diff)) {
+//       nums.push([array[i], diff]);
+//       // break;
+//     }
+//   }
+
+//   return nums;
+// };
+
+// console.log(targetSum(array, sum));
+
+
+// Target sum.............
+
+let hashTwoSum = (array, sum) => {
+  let storageHash = {}
+  let nums = []
+  
+  for(let i in array){
+    let addend = sum - array[i]
+      
+      if (addend in storageHash){
+          nums.push([addend, array[i]])
+      }
+      storageHash[array[i]] = i
     }
-  }
+    console.log(storageHash)
+  return nums
 
-  return nums;
-};
+}
 
-console.log(targetSum(array, sum));
+
+console.log(hashTwoSum(array,sum))

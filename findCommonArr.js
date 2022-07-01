@@ -21,3 +21,5 @@ function findCommon(arr1, arr2, arr3) {
   }
   
   console.log(findCommon(arr1, arr2, arr3));
+
+

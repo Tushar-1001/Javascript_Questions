@@ -2,7 +2,6 @@
 
 let arr = [1, 2, 3, 4, 6];
 
-// Output: arr[] = {5, 1, 2, 3, 4}
 
 function rotateArray(arr) {
   let n = arr.length;
@@ -12,11 +11,16 @@ function rotateArray(arr) {
     arr[i] = arr[i - 1];
   }
 
+  console.log(x)
+  console.log(arr[0])
   arr[0] = x;
 
   return arr;
 }
 console.log(rotateArray(arr));
+
+
+
 
 
 

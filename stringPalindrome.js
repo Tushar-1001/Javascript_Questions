@@ -1,7 +1,7 @@
-let str = "racecar";
+// let str = "racecar";
 
 
-// console.log(str.split('').reverse().join(''))
+// // console.log(str.split('').reverse().join(''))
 
 function strPalindrome(str) {
   for (let i = 0; i < str.length / 2; i++) {

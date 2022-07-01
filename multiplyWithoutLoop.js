@@ -7,9 +7,9 @@ function multiply(num1, num2) {
   if (num1 == 0 || num2 == 0) {
     return 0;
   } else {
+    console.count(num1 + multiply(num1, num2 - 1))
     return num1 + multiply(num1, num2 - 1);
   }
 }
 
 console.log(multiply(num1, num2));
-

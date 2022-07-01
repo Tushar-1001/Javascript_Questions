@@ -15,6 +15,12 @@ fs.writeFile ("input.json", JSON.stringify(data), function(err) {
     }
 );
 
+fs.readFile('input.json', 'utf8', function(err, saveUserData){
+    // Display the file content
+    const data = JSON.parse(saveUserData)
+    console.log(data.name);
+  });
+
 
 
 

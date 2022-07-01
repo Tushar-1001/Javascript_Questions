@@ -2,7 +2,8 @@
 
 let arr = [1, 6, 4, 3, 2, 8];
 
-//ouytput = [8,2,3,4,6,1]
+
+//output = [8,2,3,4,6,1]
 
 function reverseArr(arr) {
   for (let i = 0; i < arr.length / 2; i++) {
@@ -15,3 +16,4 @@ function reverseArr(arr) {
   return arr;
 }
 console.log(reverseArr(arr));
+
